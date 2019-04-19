@@ -2,6 +2,9 @@
 # http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_2_D&lang=jp
 # 挿入ソートを応用してn個の整数を含む数列Aを昇順に整列するプログラム
 
+# シェルソートはぼ整列されたデータに対しては高速に動作する挿入ソートの特徴を生かす高速なアルゴリズム.
+# 一定の間隔g離れたβ書のみを対象とした挿入ソートを繰り返す
+
 def show(array):
     for i in range(len(array)):
         if (i+1) >= len(array):
