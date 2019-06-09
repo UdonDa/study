@@ -7,17 +7,13 @@ def main():
 
   stack = []
   for inp in inps:
+    a = int(stack.pop(-2))
+    b = int(stack.pop(-1))
     if inp == "+":
-      a = int(stack.pop(-2))
-      b = int(stack.pop(-1))
       stack.append(a+b)
     elif inp == "-":
-      a = int(stack.pop(-2))
-      b = int(stack.pop(-1))
       stack.append(a-b)
     elif inp == "*":
-      a = int(stack.pop(-2))
-      b = int(stack.pop(-1))
       stack.append(a*b)
     else:
       stack.append(inp)
